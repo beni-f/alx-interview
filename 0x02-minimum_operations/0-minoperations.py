@@ -15,9 +15,3 @@ def minOperations(n):
             count += 1 
             operations += 1
     return count
-
-n = 4
-print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
-
-n = 12
-print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))    
