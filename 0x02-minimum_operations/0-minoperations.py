@@ -2,10 +2,12 @@
 """
     Minimum Operations
 """
+
+
 def minOperations(n):
     if (n <= 0):
         return 0
-    
+
     operations = 0
     iterator = 2
     while (iterator <= n):
@@ -15,4 +17,3 @@ def minOperations(n):
             iterator = 1
         iterator += 1
     return operations
-    
