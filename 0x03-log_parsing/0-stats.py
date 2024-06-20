@@ -24,13 +24,13 @@ if __name__ == '__main__':
             # print(parse)
             try:
                 file_size += [int(parse[-1])]
-            except:
+            except (Exception):
                 pass
             try:
                 status_code = parse[-2]
                 if status_code in status_codes.keys():
                     status_codes[status_code] += 1
-            except:
+            except (Exception):
                 pass
             if line_count % 10 == 0:
                 metrics(file_size, status_codes)
