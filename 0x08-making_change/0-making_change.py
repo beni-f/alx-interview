@@ -2,13 +2,14 @@
 """
 0-making_change
 """
+
+
 def makeChange(coins, total):
     """
         Determine the fewest number of coins needed to meet a given amout total
     """
     if total <= 0:
         return 0
-    
     dp = [total + 1] * (total + 1)
     dp[0] = 0
 
